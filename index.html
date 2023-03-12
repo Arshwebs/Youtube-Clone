@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Youtube Clone</title>
+		<!-- Google Font icons -->
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<!-- Header start -->
+		<div class="header">
+			<div class="header_left">
+				<i id="menu" class="material-symbols-outlined">menu</i>
+				<img src="./assets/YouTube-White-Full-Color-Logo.wine.svg" alt="Youtube logo" />
+			</div>
+
+			<div class="header_search">
+				<div class="search_input_data_container">
+					<input id="search_data" type="text" placeholder="Search" onkeypress="relatedContent()" />
+					<button onclick="search()"><span class="material-symbols-outlined"> search </span></button>
+				</div>
+				<div class="search-live-data show_search_list" id="search_hidden"></div>
+			</div>
+
+			<div class="header_icons">
+				<i class="material-symbols-outlined display-this"> search </i>
+				<i class="material-symbols-outlined"> videocam </i>
+				<i class="material-symbols-outlined">apps</i>
+				<i class="material-symbols-outlined">notifications</i>
+				<i class="material-symbols-outlined display-this">account_circle</i>
+			</div>
+		</div>
+		<!-- header ends -->
+		<div class="main-hidden-content-div" oncontextmenu="removeSearch()"></div>
+		<!-- Main body starts -->
+		<div class="mainBody">
+			<div class="sideBar">
+				<!-- First sidebar part -->
+				<div class="sideBar_categories">
+					<div class="sideBar_category">
+						<i class="material-symbols-outlined">home</i>
+						<span>home</span>
+					</div>
+					<div class="sideBar_category">
+						<i class="material-symbols-outlined">local_fire_department</i>
+						<span>trending</span>
+					</div>
+					<div class="sideBar_category">
+						<i class="material-symbols-outlined">subscriptions</i>
+						<span>subscriptions</span>
+					</div>
+				</div>
+				<hr />
+				<!-- Second sidebar part -->
+				<div class="sideBar_categories">
+					<div class="sideBar_category">
+						<i class="material-symbols-outlined">library_add_check</i>
+						<span>Library</span>
+					</div>
+					<div class="sideBar_category">
+						<i class="material-symbols-outlined">history</i>
+						<span>History</span>
+					</div>
+					<div class="sideBar_category">
+						<i class="material-symbols-outlined">play_arrow</i>
+						<span>Your Videos</span>
+					</div>
+					<div class="sideBar_category">
+						<i class="material-symbols-outlined">watch_later</i>
+						<span>Watch Later</span>
+					</div>
+					<div class="sideBar_category">
+						<i class="material-symbols-outlined">thumb_up</i>
+						<span>Liked Videos</span>
+					</div>
+				</div>
+				<hr />
+				<!-- second side bar ends -->
+				<!-- Subscripstion part starts -->
+				<div class="subscription_data_container">
+					<h4>SUBSCRIPTIONS</h4>
+					<div class="subscription-data">
+						<div class="subscription_profilephoto">
+							<img src="https://xsgames.co/randomusers/avatar.php?g=male" alt="" />
+						</div>
+						<span>Sub Example</span>
+						<div class="streming">
+							<img src="./assets/icons8-youtube-live-24.png" alt="" />
+						</div>
+					</div>
+					<div class="subscription-data">
+						<div class="subscription_profilephoto">
+							<img src="https://xsgames.co/randomusers/avatar.php?g=male" alt="" />
+						</div>
+						<span>Sub Example</span>
+						<div class="streming">
+							<img src="./assets/icons8-youtube-live-24.png" alt="" />
+						</div>
+					</div>
+					<div class="subscription-data">
+						<div class="subscription_profilephoto">
+							<img src="https://xsgames.co/randomusers/avatar.php?g=male" alt="" />
+						</div>
+						<span>Sub Example</span>
+						<div class="streming">
+							<img src="./assets/icons8-youtube-live-24.png" alt="" />
+						</div>
+					</div>
+					<div class="subscription-data">
+						<div class="subscription_profilephoto">
+							<img src="https://xsgames.co/randomusers/avatar.php?g=male" alt="" />
+						</div>
+						<span>Sub Example</span>
+						<div class="streming">
+							<img src="./assets/icons8-youtube-live-24.png" alt="" />
+						</div>
+					</div>
+					<div class="subscription-data">
+						<div class="subscription_profilephoto">
+							<img src="https://xsgames.co/randomusers/avatar.php?g=male" alt="" />
+						</div>
+						<span>Sub Example</span>
+						<div class="streming">
+							<img src="./assets/icons8-youtube-live-24.png" alt="" />
+						</div>
+					</div>
+				</div>
+				<hr />
+			</div>
+			<!-- sidebar ends -->
+			<!-- upper content -->
+
+			<div class="mainbody_container">
+				<hr />
+				<div class="mainbody_upper_content">
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">All</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">Computer programs</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">Music</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">Gaming</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">Bodybuilding</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">thoughts</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">mixes</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">live</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">Hardware</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">Wildlife</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">Javascript</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">Motivation</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">Trailers</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">Content</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">New Songs</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">Python</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">GO</div>
+					<div class="body_upper_content" onclick="bodyUpperContent(this)">English</div>
+				</div>
+				<!-- Video data starts -->
+				<div class="videos">
+					<!-- <h1>Recommended</h1> -->
+					<div class="videos_container">
+						<!-- video starts -->
+
+						<!-- video ends -->
+						<!-- video starts -->
+
+						<!-- video ends -->
+					</div>
+				</div>
+				<!-- Video data ends -->
+			</div>
+		</div>
+		<!-- Main body e0nds -->
+		<!-- <button onclick="authenticate().then(loadClient)">authorize and load</button>
+		<button onclick="execute()">execute</button> -->
+		<script src="https://apis.google.com/js/api.js"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>
