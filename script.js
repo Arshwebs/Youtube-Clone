@@ -3,6 +3,14 @@ const sideBar = document.querySelector(".sideBar");
 const apiKey = "AIzaSyAVseJskFR7byOh2xOTwiTuVni8S4PO_9o";
 let search_input = "";
 
+window.addEventListener("load", () => {
+	setTimeout(() => {
+		alert(
+			"Github repository changed I am unable to resume my repository on webcode so please locate the repo in this github URL https://github.com/Arshwebs/Youtube-Clone.git or click the github icon in the nav bar."
+		);
+	}, 500);
+});
+
 menu.addEventListener("click", e => {
 	sideBar.classList.toggle("show-sideBar");
 });
