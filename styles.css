@@ -123,6 +123,10 @@ button:hover {
 	opacity: 0;
 }
 
+.changesize {
+	padding: 5px 15px;
+}
+
 /* sidebar */
 
 .sideBar {
@@ -241,6 +245,7 @@ button:hover {
 	overflow-x: scroll;
 	justify-content: flex-start;
 	align-items: center;
+	white-space: nowrap;
 	gap: 10px;
 	width: 100%;
 	padding: 10px;
